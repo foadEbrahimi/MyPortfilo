@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./src/disc/main.css" />
     <title>Personal Portfilo</title>
   </head>
   <body class="bg-Primary-100">
-    <header>
+    <header id="header">
       <div
         class="container mx-auto flex items-center justify-between py-2 px-3 2xl:px-16"
       >
@@ -26,43 +30,241 @@
             class="flex items-center gap-x-4 md:gap-x-7 lg:gap-x-9 xl:gap-x-12 2xl:gap-x-14 md:uppercase"
           >
             <li class="text-Primary-900 font-semibold">
-              <a href="#">Home</a>
+              <a href="#header">Home</a>
             </li>
             <li
               class="text-Primary-700 font-semibold hover:text-Primary-900 transition"
             >
-              <a href="#">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li
               class="text-Primary-700 font-semibold hover:text-Primary-900 transition"
             >
-              <a href="#">About</a>
+              <a href="#About">About</a>
             </li>
             <li
               class="text-Primary-700 font-semibold hover:text-Primary-900 transition"
             >
-              <a href="#">Projects</a>
+              <a href="#Projects">Projects</a>
             </li>
             <li
               class="text-Primary-700 font-semibold hover:text-Primary-900 transition"
             >
-              <a href="#">Contact</a>
+              <a href="#Contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </header>
     <nav>
-      <div class="container flex flex-col items-center justify-center gap-y-3 mt-28">
+      <div
+        class="container flex flex-col items-center justify-center gap-y-3 mt-28"
+      >
         <img
           src="./src/assets/images/myPicture.jpg"
-          class="h-52 w-52 rounded-full"
+          class="h-64 w-64 rounded-full"
           alt=""
         />
-        <h1 class="text-xl text-Primary-900 italic font-semibold">Hi There, I'm</h1>
-        <h1 class="text-6xl 2xl:text-7xl italic text-Primary-900">Foad Ebrahimi</h1>
+        <h1 class="text-xl text-Primary-900 italic font-semibold">
+          Hi There, I'm
+        </h1>
+        <h1 class="text-6xl 2xl:text-7xl italic text-Primary-900">
+          Foad Ebrahimi
+        </h1>
       </div>
     </nav>
+    <main class="container mt-48 mx-auto">
+      <div
+        class="services flex flex-col items-center justify-center p-2"
+        id="services"
+      >
+        <h1 class="uppercase text-4xl 2xl:text-6xl italic text-Primary-900">
+          Services
+        </h1>
+        <div
+          class="cards mt-8 xl:mt-20 flex flex-col gap-y-10 md:grid md:grid-cols-2 md:gap-x-5 lg:grid-cols-3 2xl:grid-cols-4"
+        >
+          <a href="#">
+            <div
+              class="card border-Primary-900 p-5 flex flex-col justify-center items-center gap-y-2 shadow-lg shadow-Primary-700"
+            >
+              <i class="bi bi-credit-card-2-front text-6xl"></i>
+              <h1 class="uppercase" style="letter-spacing: 0.3rem">
+                web design
+              </h1>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores consequatur in sunt expedita,
+              </p>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="card border-Primary-900 p-5 flex flex-col justify-center items-center gap-y-2 shadow-lg shadow-Primary-700"
+            >
+              <i class="bi bi-code-slash text-6xl"></i>
+              <h1 class="uppercase" style="letter-spacing: 0.3rem">
+                web development
+              </h1>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores consequatur in sunt expedita,
+              </p>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="card border-Primary-900 p-5 flex flex-col justify-center items-center gap-y-2 shadow-lg shadow-Primary-700"
+            >
+              <i class="bi bi-gear text-6xl"></i>
+              <h1 class="uppercase" style="letter-spacing: 0.3rem">
+                social media
+              </h1>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores consequatur in sunt expedita,
+              </p>
+            </div>
+          </a>
+          <a href="#">
+            <div
+              class="card border-Primary-900 p-5 flex flex-col justify-center items-center gap-y-2 shadow-lg shadow-Primary-700"
+            >
+              <i class="bi bi-suitcase-lg text-6xl"></i>
+              <h1 class="uppercase" style="letter-spacing: 0.3rem">
+                freelancing
+              </h1>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores consequatur in sunt expedita,
+              </p>
+            </div>
+          </a>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      </div>
+      <div id="About" class="flex flex-col justify-center items-center">
+        <h1 class="uppercase text-4xl 2xl:text-6xl italic text-Primary-900">
+          About
+        </h1>
+        <div
+          class="flex flex-col md:flex-row justify-center items-center mt-8 gap-y-5 md:gap-x-5"
+        >
+          <div class="Picture">
+            <img
+              src="./src/assets/images/myPicture.jpg"
+              class="w-96 md:w-min rounded-lg"
+              alt=""
+            />
+          </div>
+          <div
+            class="skills group border-2 border-Primary-700 p-5 w-full space-y-3"
+          >
+            <h1 class="text-Primary-900 text-2xl">Skills</h1>
+            <div class="progress space-y-1">
+              <div class="percnr flex items-center justify-between">
+                <h1 class="text-Primary-900 text-xl">HTML</h1>
+                <h1>100%</h1>
+              </div>
+              <div
+                class="progress relative border-Primary-700 border rounded-full h-3"
+              >
+                <div
+                  class="progressbar absolute top-0 left-0 rounded-full bg-red-500 h-full w-full group-hover:bg-Primary-900 transition-all duration-500"
+                ></div>
+              </div>
+            </div>
+            <div class="progress space-y-1">
+              <div class="percnr flex items-center justify-between">
+                <h1 class="text-Primary-900 text-xl">CSS</h1>
+                <h1>90%</h1>
+              </div>
+              <div
+                class="progress relative border-Primary-700 border rounded-full h-3"
+              >
+                <div
+                  class="progressbar absolute top-0 left-0 rounded-full bg-red-500 h-full w-80 group-hover:bg-Primary-700 transition-all duration-500"
+                ></div>
+              </div>
+            </div>
+            <div class="progress space-y-1">
+              <div class="percnr flex items-center justify-between">
+                <h1 class="text-Primary-900 text-xl">JavaScript</h1>
+                <h1>40%</h1>
+              </div>
+              <div
+                class="progress relative border-Primary-700 border rounded-full h-3"
+              >
+                <div
+                  class="progressbar absolute top-0 left-0 rounded-full bg-red-500 h-full w-36 group-hover:bg-Primary-300 transition-all duration-500"
+                ></div>
+              </div>
+            </div>
+            <div class="progress space-y-1">
+              <div class="percnr flex items-center justify-between">
+                <h1 class="text-Primary-900 text-xl">Tailwind Css</h1>
+                <h1>90%</h1>
+              </div>
+              <div
+                class="progress relative border-Primary-700 border rounded-full h-3"
+              >
+                <div
+                  class="progressbar absolute top-0 left-0 rounded-full bg-red-500 h-full w-80 group-hover:bg-Primary-900 transition-all duration-500"
+                ></div>
+              </div>
+            </div>
+            <div class="progress space-y-1">
+              <div class="percnr flex items-center justify-between">
+                <h1 class="text-Primary-900 text-xl">Bootstrap</h1>
+                <h1>90%</h1>
+              </div>
+              <div
+                class="progress relative border-Primary-700 border rounded-full h-3"
+              >
+                <div
+                  class="progressbar absolute top-0 left-0 rounded-full bg-red-500 h-full w-80 group-hover:bg-Primary-700 transition-all duration-500"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-center items-center mt-20 px-5"
+        id="Projects"
+      >
+        <h1 class="text-5xl 2xl:text-6xl text-Primary-900 italic">
+          MY Projects
+        </h1>
+        <div class="mt-8 flex flex-col items-center justify-center gap-y-2">
+          <h1 class="text-2xl">You Can See my Project Here 🤪</h1>
+          <a href="">
+            <a href="https://github.com/foadEbrahimi" class="btn-here"
+              >Here Bro</a
+            >
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="flex flex-col justify-center items-center gap-y-3 mt-28"
+      id="Contact"
+    >
+      <h1 class="text-5xl font-mono italic text-Primary-900">Contact Me</h1>
+      <h1 class="text-2xl text-center">
+        Do you have question? Don't worry! just contact us ;)
+      </h1>
+      <div class="Contact-btn flex gap-x-4">
+        <a href="https://t.me/BeFrontFace" class="btn-contact">
+          <i class="bi bi-telegram me-2"></i>
+          Telegram
+        </a>
+        <a href="mailto:fwad40901@gmail.com" class="btn-contact">
+          <img src="./src/assets/images/email-svg.svg" class="me-2" alt="" />
+          Gmail
+        </a>
+      </div>
+    </footer>
     <script src="./src/assets/javascript/app.js"></script>
   </body>
 </html>
