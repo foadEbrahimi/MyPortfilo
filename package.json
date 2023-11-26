@@ -3,6 +3,7 @@
     "watch": "npx tailwindcss -i ./src/assets/style/inputTailwind.css -o ./src/disc/main.css --watch"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.11.2",
     "tailwind": "^4.0.0"
   }
 }
